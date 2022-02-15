@@ -66,7 +66,8 @@ Hold F12 (or whatever key is used on your system) during startup to access start
 
 The most reliable way is to use a wired connection, as Arch is setup by default to connect to DHCP. However, you can usually get WiFi working by running:
 
-    $   station wlan0 connect "SSID"
+    $ iwctl 
+    $ station wlan0 connect "SSID"
 
 To test your connection:
 
