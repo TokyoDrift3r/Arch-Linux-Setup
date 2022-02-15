@@ -355,6 +355,7 @@ Since we're using disk encryption we need to make sure that the LUKS module gets
 
 Edit the following config file:
 
+    $   pacman -S mkinitcpio
     $   nano /etc/mkinitcpio.conf
 
 Scroll down to the HOOKS section. It should look similar to this:
