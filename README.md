@@ -378,6 +378,7 @@ Scroll up to the MODULES section and change it to:
 
 Now update the initramfs image with our changes:
 
+    $   pacman -S linux
     $   mkinitcpio -p linux
 
 If you're curious what modules are available as intcpio hooks:
