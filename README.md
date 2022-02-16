@@ -502,7 +502,12 @@ Then save the file.
 The installation is basically done so we now update the databases and all installed packages:
 
     $   pacman -Syu
+## Make sure linux firmware is installed and ath10k driver is updated
 
+linux-firmware is not installed by default. After installation remove and re-add ath10k driver for wireless card. Restart iwd service
+
+    $   sudo modprobe -r ath10k_pci && sudo modprobe ath10k_pci
+    $   sudo systemctl restart iwd.service
 ---
 
 ## Congratulations!
